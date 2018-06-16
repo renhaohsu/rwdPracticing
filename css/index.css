@@ -1,0 +1,101 @@
+@charset "UTF-8";
+* {
+  vertical-align: top;
+  font-family: 微軟正黑體;
+}
+
+.container {
+  font-size: 0px;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block {
+  display: inline-block;
+  font-size: 20px;
+  box-sizing: border-box;
+  border: solid 3px black;
+  height: 200px;
+  text-align: center;
+  padding: 10px;
+}
+.block p {
+  font-size: 15px;
+}
+.block .icon {
+  width: 30%;
+  min-width: 150px;
+}
+
+.a {
+  height: initial;
+}
+
+.sblock {
+  border: solid 2px black;
+  display: inline-block;
+  width: 30%;
+}
+.sblock svg {
+  width: 100%;
+  height: 200px;
+  background-color: #aaa;
+}
+
+.intro {
+  height: initial;
+}
+
+#pic3 {
+  stroke: black;
+  stroke-width: 2px;
+}
+#pic3 polyline {
+  fill: none;
+}
+
+#pic5 {
+  stroke: black;
+  stroke-width: 3px;
+}
+#pic5 circle {
+  fill: white;
+}
+
+.a, .g, .intro {
+  width: 100%;
+}
+
+.b {
+  width: 70%;
+}
+
+.c, .f {
+  width: 30%;
+}
+
+.d, .e {
+  width: 35%;
+}
+
+@media screen and (max-width: 1000px) {
+  .b {
+    width: 100%;
+  }
+
+  .c, .d, .e, .f {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .b, .c, .d, .e, .f {
+    width: 100%;
+  }
+
+  .sblock {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
